@@ -1,0 +1,117 @@
+<!--
+
+body {
+	background: brown;
+}
+
+/* Blueprint reset.css */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+body {line-height:1.5;}
+table {border-collapse:separate;border-spacing:0;}
+caption, th, td {text-align:left;font-weight:normal;}
+table, td, th {vertical-align:middle;}
+blockquote:before, blockquote:after, q:before, q:after {content:"";}
+blockquote, q {quotes:"" "";}
+a img {border:none;}
+
+body {
+	background: url( "../img/bg.jpg" );
+}
+
+#wrapper {
+	width: 990px;
+	margin-left: -495px;
+	margin-top: 10px;
+	position: absolute;
+	left: 50%;
+	
+}
+
+#rndtop {
+	background: url( "../img_lib/top_white_990.png" );
+	height:	24px;
+}
+
+#rndbot {
+	background: url( "../img_lib/bottom_dark_990.png" );
+	height:	38px;
+}
+
+#shadow {
+	background: url( "../img_lib/shadowbg.png" );
+	padding-left: 15px;
+	padding-right: 15px;
+}
+#header {
+	text-indent: -9999px;
+	background: white url( "../img/header.png" ) 133px 65px no-repeat;
+	height: 203px;
+}
+
+#nav_border {
+	background: black;
+	height: 10px;
+}
+
+#navigation {
+	background: url( "../img_lib/nav_bg.png" );
+	height: 51px;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+
+#navigation ul {
+	display: inline;
+}
+
+#navigation li {
+	display: inline;
+}
+
+#navigation li a {
+	height: 51px;
+	width: 100px;
+	background: white;
+	clear: none;
+}
+/*141414*/
+
+#gallery {
+	height: 187px;
+	background: black url( "../img_lib/gallery_bg.png" );
+	border: 1px solid black;
+	border-top: 0px solid none;
+}
+
+#content {
+	background: #141414 url( "../img_lib/contentbg.png" ) bottom no-repeat;
+	color: white;
+	padding-left: 15pt;
+	padding-right: 15pt;
+	overflow: hidden;
+}
+
+#content h2 {
+	padding-top: 24px;
+	font-size: 24pt;
+	padding-bottom: 12px;
+	
+}
+
+#content div {
+	width: 440px;
+	float: left;
+	margin-right: 20px;
+}
+#content p {
+	text-align: justify;
+	font-size: 14pt;
+	line-height: 22pt;
+}
+
+
+#bottomlinks {
+	color: white;
+	text-align: center;
+}
+-->
