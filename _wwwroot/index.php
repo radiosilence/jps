@@ -7,7 +7,7 @@ define( "DIRSEP", DIRECTORY_SEPARATOR );
 define( "SITE_PATH", realpath( dirname( __FILE__ ) . DIRSEP . '..' . DIRSEP ) . DIRSEP );
 define( "WWW_PATH", preg_replace( "/(.*?)\/index.php/", "$1", $_SERVER[ 'PHP_SELF' ] ) );
  
-$page_title = "JPS";
+$page_title = "Jonathan Sharp | Decoration, Refurbishment & Maintenance";
 
 $pages = array (
 	"home" => array( 

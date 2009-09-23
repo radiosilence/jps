@@ -11,8 +11,8 @@
 			</div>
 			<div id="shadow">
 				<div id="header">
-					Jonathan Sharp
-					Decoration, Refurbishment &amp; Maintenance
+					<h1>Jonathan Sharp</h1>
+					<p>Decoration, Refurbishment &amp; Maintenance</p>
 				</div>
 				<div id="nav_border">
 				</div>
@@ -42,7 +42,8 @@
 			&nbsp;
 			</div>
 			<div id="bottomlinks">
-			Blah blah blah
+				<p>Copyright &copy; 2009 Jonathan Sharp | E-Mail: <a href="mailto:jonathansharp1@gmail.com">jonathansharp1@gmail.com</a> | Tel: 07973 320277</p>
+				<p class="plug">Website by <a href="http://www.jamescleveland.co.uk">James Cleveland</a></p>
 			</div>
 		</div>
 	</body>

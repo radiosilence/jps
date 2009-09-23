@@ -18,6 +18,25 @@ body {
 	background: url( "../img/bg.jpg" );
 }
 
+
+body, div, p, span, li, a {
+	font-family: georgia, serif;	
+}
+
+h1 {
+	font-family: "Minion Pro", georgia, serif;
+	font-size: 48pt;
+	font-variant: small-caps;
+}
+
+h2 {
+	font-family: "adobe garamond pro", "garamond", georgia, serif;
+}
+
+a {
+	color: white;
+	text-decoration: underline;
+}
 #wrapper {
 	width: 990px;
 	margin-left: -495px;
@@ -111,7 +130,13 @@ body {
 
 
 #bottomlinks {
+	font-size: 14pt;
 	color: white;
 	text-align: center;
+}
+
+#bottomlinks .plug {
+	padding-top: 8px;
+	font-size: 12pt;
 }
 -->
