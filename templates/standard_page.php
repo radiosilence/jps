@@ -3,6 +3,10 @@
 	<head>
 		<title><?php echo $page_title ?></title>
 		<link rel="stylesheet" href="css_lib/screen.css">
+		<!--[if lt IE 7]>
+			<script defer type="text/javascript" src="js_lib/pngfix.js"></script>
+		<![endif]-->
+
 	</head>
 	<body id="<?php echo $cur_page?>">
 		<div id="wrapper">
