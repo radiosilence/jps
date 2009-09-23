@@ -12,6 +12,13 @@ caption, th, td {text-align:left;font-weight:normal;}
 table, td, th {vertical-align:middle;}
 blockquote:before, blockquote:after, q:before, q:after {content:"";}
 blockquote, q {quotes:"" "";}
+
+a:active, a:focus {
+outline-color:-moz-use-text-color;
+outline-style:none;
+outline-width:medium;
+}
+
 a img {border:none;}
 
 body {
@@ -63,10 +70,14 @@ a {
 }
 #header {
 	text-indent: -9999px;
-	background: white url( "../img/header.png" ) 133px 65px no-repeat;
-	height: 203px;
+	background: white url( "../img/header.png" ) 34px 19px no-repeat;
+	height: 93px;
 }
 
+body#home #header {
+	background: white url( "../img/header_home.png" ) 133px 65px no-repeat;
+	height: 203px;
+}
 #nav_border {
 	background: black;
 	height: 10px;
@@ -84,53 +95,135 @@ a {
 }
 
 #navigation li {
-	display: inline;
+	width: 150px;
+	clear: none;
+	display: block;
+	float: left;
+	height: 50px;
+	text-align: center;
+}
+
+#navigation li.selected {
+	background: url( "../img_lib/navselbg.png" );
 }
 
 #navigation li a {
-	height: 51px;
-	width: 100px;
-	background: white;
-	clear: none;
+	display: block;
+	text-indent: -9999px;
+	height: 50px; 
 }
-/*141414*/
+
+/* navigation buttons */
+
+#navigation li a#home {	
+	background: url( "../img_lib/nav/home.png" ) no-repeat 45px 15px;
+}
+#navigation li a#contact {	
+	background: url( "../img_lib/nav/contact.png" ) no-repeat 31px 15px;
+}
+#navigation li a#quotes {	
+	background: url( "../img_lib/nav/quotes.png" ) no-repeat 37px 15px;
+}
+
 
 #gallery {
 	height: 187px;
+	width: 958px;
+	text-align: center;
 	background: black url( "../img_lib/gallery_bg.png" );
-	border: 1px solid black;
 	border-top: 0px solid none;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	display: none;
 }
 
+body#home #gallery {
+	display: block;
+}
+
+#gallery li {
+	display: block;
+	float: left;
+	height: 187px;
+}
+
+
 #content {
-	background: #141414 url( "../img_lib/contentbg.png" ) bottom no-repeat;
+	background: #161616 url( "../img_lib/contentbg2.png" ) bottom no-repeat;
 	color: white;
-	padding-left: 15pt;
-	padding-right: 15pt;
 	overflow: hidden;
 }
 
+body#home #content {
+	background: #161616 url( "../img_lib/contentbg.png" ) bottom no-repeat;
+}
+
+body#home #content h2 {
+	display: none;
+}
+
+body#home #content h2#slogan {
+	display: block;
+}
 #content h2 {
+	padding-left: 30px;
 	padding-top: 24px;
 	font-size: 24pt;
 	padding-bottom: 12px;
-	
 }
 
 #content div {
-	width: 440px;
+	width: 430px;
 	float: left;
-	margin-right: 20px;
-}
-#content p {
-	text-align: justify;
-	font-size: 14pt;
-	line-height: 22pt;
+	margin-left: 30px;
 }
 
+#content #contentinnershadow {
+	display: block;
+	float: none;
+	background: url( "../img_lib/menushadow.png" ) repeat-x;
+	width: 960px;
+	height: 10px;
+	margin-left: 0px;
+	margin-bottom: -10px;
+}
+
+#content p {
+	font-size: 12pt;
+	line-height: 20pt;
+	text-align: justify;
+}
+
+body#home #content p {
+	font-size: 14pt;
+	line-height: 24pt;
+
+}
+
+#content label {
+	display: block;
+	float: left;
+	font-weight: bold;
+	width: 150px;
+	clear: left;
+}
+
+#contact label:after
+{
+	content: ": ";
+}
+
+#contact p#intro {
+	margin-bottom: 15px;
+}
+
+#content field {
+	display: block;
+	float: left;
+}
 
 #bottomlinks {
-	font-size: 14pt;
+	font-size: 12pt;
 	color: white;
 	text-align: center;
 }
@@ -138,5 +231,19 @@ a {
 #bottomlinks .plug {
 	padding-top: 8px;
 	font-size: 12pt;
+}
+
+#scattered {
+	position: absolute;
+	left: 50%;
+	margin-left: -100px;
+	top: 310px;
+	width: 528px;
+	height: 260px;
+	background: url( "../img/scattered.png" );
+	display: none;
+}
+body#home #scattered {
+	display: block;
 }
 -->

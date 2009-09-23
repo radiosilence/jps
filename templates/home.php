@@ -4,7 +4,7 @@
 		<title><?php echo $page_title ?></title>
 		<link rel="stylesheet" href="css_lib/screen.css">
 	</head>
-	<body>
+	<body id="<?php echo $cur_page?>">
 		<div id="wrapper">
 			<div id="rndtop">
 			&nbsp;
@@ -13,13 +13,14 @@
 				<div id="header">
 					<h1>Jonathan Sharp</h1>
 					<p>Decoration, Refurbishment &amp; Maintenance</p>
+					<a href="home.html"><img src="t.gif"></a>
 				</div>
 				<div id="nav_border">
 				</div>
 				<div id="navigation">
 					<ul>
 					<?php foreach( $pages as $name => $page ): ?>
-						<li <?php echo ( $cur_page == $name ? "class=\"selected\" " : null )?>id="<?php echo $name?>"><a href="<?php echo WWW_PATH . "/" . $name ?>"><?php //echo $page[ "title" ]?></a></li>
+						<li <?php echo ( $cur_page == $name ? "class=\"selected\" " : null )?>id="<?php echo $name?>"><a href="<?php echo WWW_PATH . "/" . $name ?>.html" id="<?php echo $name ?>"><?php echo $page[ "title" ]?></a></li>
 					<?php endforeach; ?>
 					</ul>
 				</div>
