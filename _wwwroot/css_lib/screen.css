@@ -61,13 +61,16 @@ a {
 #rndbot {
 	background: url( "../img_lib/bottom_dark_990.png" );
 	height:	38px;
+	clear: both;
 }
 
 #shadow {
 	background: url( "../img_lib/shadowbg.png" );
 	padding-left: 15px;
 	padding-right: 15px;
+	overflow:hidden;
 }
+
 #header {
 	text-indent: -9999px;
 	background: white url( "../img/header.png" ) 34px 19px no-repeat;

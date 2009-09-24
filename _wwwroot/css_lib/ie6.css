@@ -1,0 +1,37 @@
+/* ARRRGGHHHH */
+
+#scattered {
+	background-color: none;
+	background-image: none;
+	visibility: hidden;
+}
+
+#content #contentinnershadow {
+	visibility: hidden;
+	display: none;
+}
+
+#shadow {
+	background-image: none;
+}
+
+#navigation li a {
+	display: block;
+	text-indent: 0px;
+	height: 40px; 
+	padding:none;
+	padding-top: 10px;
+	font-size: 14pt;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#navigation li a#home {	
+	background: none;
+}
+#navigation li a#contact {	
+	background: none;
+}
+#navigation li a#quotes {	
+	background: none;
+}

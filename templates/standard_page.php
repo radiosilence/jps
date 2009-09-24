@@ -5,6 +5,7 @@
 		<link rel="stylesheet" href="css_lib/screen.css">
 		<!--[if lt IE 7]>
 			<script defer type="text/javascript" src="js_lib/pngfix.js"></script>
+			<link rel="stylesheet" href="css_lib/ie6.css">
 		<![endif]-->
 
 	</head>
@@ -50,7 +51,9 @@
 			</div>
 		</div>
 		<div id="scattered">
-		&nbsp;
+		<!--[if lt IE 7]>
+			<img src="../img/scattered.png" width="528" height="260" />
+		<![endif]-->
 		</div>
 	</body>
 </html>
