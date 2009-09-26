@@ -51,9 +51,7 @@
 			</div>
 		</div>
 		<div id="scattered">
-		<!--[if lt IE 7]>
-			<img src="../img/scattered.png" width="528" height="260" />
-		<![endif]-->
+			<img src="img/scattered.png" width="528" height="260" />
 		</div>
 	</body>
 </html>

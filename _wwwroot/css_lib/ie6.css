@@ -3,7 +3,6 @@
 #scattered {
 	background-color: none;
 	background-image: none;
-	visibility: hidden;
 }
 
 #content #contentinnershadow {
@@ -34,4 +33,48 @@
 }
 #navigation li a#quotes {	
 	background: none;
+}
+
+#nav_border {
+	height: 5px;
+}
+
+#rndtop {
+	background: url( "../img_lib/top_white_990.gif" );
+	height:	24px;
+}
+
+#rndbot {
+	background: url( "../img_lib/bottom_dark_990.gif" );
+	height:	38px;
+	clear: both;
+}
+
+
+#content {
+	background: #161616 url( "../img_lib/contentbg.gif" ) bottom no-repeat;
+	overflow: hidden;
+	display: block;
+}
+
+/* manually specifying the heights because FUCK IE6, FUCK */
+body#home #content {
+	height: 250px;	
+}
+
+body#quotes #content {
+	height: 150px;	
+}
+
+body#contact #content {
+	height: 350px;	
+}
+
+#content div {
+	margin-left: 20px;
+	display: block;
+}
+
+body#home #content {
+	background: #161616 url( "../img_lib/contentbg.gif" ) bottom no-repeat;
 }

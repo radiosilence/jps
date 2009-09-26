@@ -243,9 +243,10 @@ body#home #content p {
 	top: 310px;
 	width: 528px;
 	height: 260px;
-	background: url( "../img/scattered.png" );
+/*	background: url( "../img/scattered.png" ); */
 	display: none;
 }
+
 body#home #scattered {
 	display: block;
 }
