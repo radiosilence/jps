@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title><?php echo $page_title ?></title>
+		<title><?=$title ?> | JonathanSharp.co.uk</title>
+		<base href="http://<?=HOST?><?=BASE_HREF?>/"/>
 		<link rel="stylesheet" href="css_lib/screen.css">
+		<!--[if lt IE 7]>
+			<script defer type="text/javascript" src="js_lib/pngfix.js"></script>
+			<link rel="stylesheet" href="css_lib/ie6.css">
+		<![endif]-->
+
 	</head>
-	<body id="<?php echo $cur_page?>">
+	<body id="<?=$page?>">
 		<div id="wrapper">
 			<div id="rndtop">
 			&nbsp;
@@ -13,26 +19,15 @@
 				<div id="header">
 					<h1>Jonathan Sharp</h1>
 					<p>Decoration, Refurbishment &amp; Maintenance</p>
-					<a href="home.html"><img src="t.gif"></a>
 				</div>
-				<div id="nav_border">
-				</div>
-				<div id="navigation">
-					<ul>
-					<?php foreach( $pages as $name => $page ): ?>
-						<li <?php echo ( $cur_page == $name ? "class=\"selected\" " : null )?>id="<?php echo $name?>"><a href="<?php echo WWW_PATH . "/" . $name ?>.html" id="<?php echo $name ?>"><?php echo $page[ "title" ]?></a></li>
-					<?php endforeach; ?>
-					</ul>
-				</div>
-				<div id="gallery">
-				some images
-				</div>
+				<?=$menu?>
 				<div id="content">
 					<div id="contentinnershadow">
 					&nbsp;</div>
-					<h2>Some slogan or something</h2>
+					<h2>JON IS AWESOME
+					</h2>
 					<div class="column">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut enim elit. Donec vel enim quis metus pellentesque consectetur eu eu dui. Integet.</p><p>Nunc ut lacus eu neque mollis fermentum quis sit amet magna. Donec ultricies tristique ante at rhoncus.</p>
+					<p>Lorem ipsum dolor sit amet, conseasdctetur adipiscing elit. Pellentesque ut enim elit. Donec vel enim quis metus pellentesque consectetur eu eu dui. Integet.</p><p>Nunc ut lacus eu neque mollis fermentum quis sit amet magna. Donec ultricies tristique ante at rhoncus.</p>
 					</div>
 					<div class="column">
 					<p>Pellentesque ut enim elit. Donec vel enim quis metus pellentesque consectetur eu eu dui. Integer interdum ullamcorper cursus. Morbi feugiat.</p><p>Nunc ut lacus eu neque mollis fermentum quis sit amet magna. Donec ultricies tristique ante at rhoncus.</p>
@@ -42,10 +37,7 @@
 			<div id="rndbot">
 			&nbsp;
 			</div>
-			<div id="bottomlinks">
-				<p>Copyright &copy; <?=$date->format('Y')?> Jonathan Sharp | E-Mail: <a href="mailto:jonathansharp1@gmail.com">jonathansharp1@gmail.com</a> | Tel: 07973 320277</p>
-				<p class="plug">Website by <a href="http://www.jamescleveland.co.uk">James Cleveland</a></p>
-			</div>
+		<?=$footer?>
 		</div>
 	</body>
 </html>

@@ -1,19 +1,18 @@
 <?php
-if($_GET['debug']!=='1')
+if(str_replace('www.',null,$_SERVER['HTTP_HOST']) == 'jonathan-sharp.co.uk')
      die("Site Under Construction");
-
-/**
+/** 
  * Das index, ja?
  */
 
-define( "DIRSEP", DIRECTORY_SEPARATOR );
-define( "SITE_PATH", realpath( dirname( __FILE__ ) . DIRSEP . '..' . DIRSEP ) . DIRSEP );
-define( "WWW_PATH", preg_replace( "/(.*?)\/index.php/", "$1", $_SERVER[ 'PHP_SELF' ] ) );
- 
-$page_title = "Jonathan Sharp | Decoration, Refurbishment & Maintenance";
+require('core_path.php');
+require(CORE_PATH . '/core.php');
 
-$date = new DateTime();
+import('core.routing');
 
+$router = new \Core\Router;
+$router->route($_GET['route']);
+/**
 $pages = array (
 	"home" => array( 
 		"title" 	=> "Home",
@@ -77,5 +76,4 @@ else
 	include $template;
 }
 
-
-?>
+*/
