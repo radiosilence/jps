@@ -1,4 +1,7 @@
 <?php
+if($_GET['debug']!=='1')
+     die("Site Under Construction");
+
 /**
  * Das index, ja?
  */
@@ -8,6 +11,8 @@ define( "SITE_PATH", realpath( dirname( __FILE__ ) . DIRSEP . '..' . DIRSEP ) . 
 define( "WWW_PATH", preg_replace( "/(.*?)\/index.php/", "$1", $_SERVER[ 'PHP_SELF' ] ) );
  
 $page_title = "Jonathan Sharp | Decoration, Refurbishment & Maintenance";
+
+$date = new DateTime();
 
 $pages = array (
 	"home" => array( 
