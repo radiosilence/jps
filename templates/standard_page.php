@@ -10,7 +10,7 @@
 		<![endif]-->
 
 	</head>
-	<body id="<?php echo $cur_page?>">
+	<body id="<?php echo $page?>">
 		<div id="wrapper">
 			<div id="rndtop">
 			&nbsp;
@@ -26,6 +26,10 @@
 					&nbsp;</div>
 					<h2><?=$title?></h2>
 <?=$content?>
+<div class="following">
+<p>Please <a href="contact.html">contact</a> for a free survey and quotation.</p>
+<p>References available on request</p>
+</div>
 				</div>
 			</div>
 			<div id="rndbot">

@@ -1,7 +1,7 @@
 <?php // Routes
 
 $routes = array(
-	'^quotes$' => 'JPS:method=page;page=quotes',
+	'^services$' => 'JPS:method=page;page=services',
 	'^contact$' => 'JPS:method=page;page=contact',
 	'^(index|home)?$' => 'JPS:page=home;'
 );

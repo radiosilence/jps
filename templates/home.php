@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title><?=$title ?> | JonathanSharp.co.uk</title>
+		<title>Jonathan Sharp - Refurbishment and Decoration in Surrey, Sussex and Kent | <?=$title ?></title>
 		<base href="http://<?=HOST?><?=BASE_HREF?>/"/>
 		<link rel="stylesheet" href="css_lib/screen.css">
 		<!--[if lt IE 7]>
@@ -22,17 +22,15 @@
 				</div>
 				<?=$menu?>
 				<div id="content">
-					<div id="contentinnershadow">
-					&nbsp;</div>
-					<h2>JON IS AWESOME
-					</h2>
-					<div class="column">
-					<p>Lorem ipsum dolor sit amet, conseasdctetur adipiscing elit. Pellentesque ut enim elit. Donec vel enim quis metus pellentesque consectetur eu eu dui. Integet.</p><p>Nunc ut lacus eu neque mollis fermentum quis sit amet magna. Donec ultricies tristique ante at rhoncus.</p>
-					</div>
-					<div class="column">
-					<p>Pellentesque ut enim elit. Donec vel enim quis metus pellentesque consectetur eu eu dui. Integer interdum ullamcorper cursus. Morbi feugiat.</p><p>Nunc ut lacus eu neque mollis fermentum quis sit amet magna. Donec ultricies tristique ante at rhoncus.</p>
-					</div>
+					<?=$content?>
+					<hr class="divsep"/>
+<div class="following">
+<p>Please <a href="contact.html">contact</a> for a free survey and quotation.</p>
+<p>References available on request</p>
+</div>
 				</div>
+
+
 			</div>
 			<div id="rndbot">
 			&nbsp;

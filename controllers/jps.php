@@ -12,7 +12,7 @@ class JPS extends \Core\Controller {
     private $template;
     private $pages = array(
         'home' => 'Home',
-        'quotes' => 'Quotes',
+        'services' => 'Services',
         'contact' => 'Contact'
     );
     private function init() {
@@ -28,6 +28,7 @@ class JPS extends \Core\Controller {
     }
     public function index() {
         $this->init();
+        $this->template->content = $this->get_page('home');
         echo $this->template->render('home.php');
     }
 
