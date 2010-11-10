@@ -1,6 +1,8 @@
 body {
     padding-top:0px;
     background: #442200 url( "../img/bg_mobile.jpg" );
+    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 #wrapper {

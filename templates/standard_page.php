@@ -24,7 +24,7 @@
 			</div>
 			<div id="shadow">
 				<div id="header">
-					<h1>Jonathan Sharp - Decoration, Refurbishment &amp; Maintenance around Surrey, Sussex &amp; Kent<</h1>
+					<a href="home.html"><h1>Jonathan Sharp - Decoration, Refurbishment &amp; Maintenance around Surrey, Sussex &amp; Kent</h1></a>
 				</div>
 				<?=$menu?>
 				<div id="content">
