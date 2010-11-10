@@ -8,6 +8,7 @@ namespace Controllers;
 import('core.controller');
 import('core.template');
 import('core.exceptions');
+import('core.utils.mobile');
 class JPS extends \Core\Controller {
     private $template;
     private $pages = array(
@@ -23,13 +24,13 @@ class JPS extends \Core\Controller {
         $t->menu_items = $this->pages;
         $t->menu = $t->render('menu.php');
         $t->footer = $t->render('footer.php');
-
+        $t->is_mobile = \Core\Utils\Mobile::detect();
         $this->template = $t;
     }
     public function index() {
         $this->init();
         $this->template->content = $this->get_page('home');
-        echo $this->template->render('home.php');
+        echo $this->template->render('standard_page.php');
     }
 
     public function page() {

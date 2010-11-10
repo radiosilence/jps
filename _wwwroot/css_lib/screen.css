@@ -21,21 +21,21 @@ body {
 
 
 body, div, p, span, li, a {
-	font-family: georgia, serif;	
+	font-family: 'Droid Serif', georgia, serif;	
 }
 
 h1 {
-	font-family: "Minion Pro", georgia, serif;
+	font-family: "adobe garamond pro", "garamond", 'Droid Serif', georgia, serif;
 	font-size: 48pt;
 	font-variant: small-caps;
 }
 
 h2 {
-	font-family: "adobe garamond pro", "garamond", georgia, serif;
+	font-family: "adobe garamond pro", "garamond", 'Droid Serif', georgia, serif;
 }
 
 h3 {
-	font-family: "adobe garamond pro", "garamond", georgia, serif;
+	font-family: "adobe garamond pro", "garamond", 'Droid Serif', georgia, serif;
 	font-size: 18pt;
 	margin-top: 10px;
 }
@@ -123,13 +123,13 @@ body#home #header {
 
 /* navigation buttons */
 
-#navigation li a#home {	
+#navigation li#menu_home a {	
 	background: url( "../img_lib/nav/home.png" ) no-repeat 45px 15px;
 }
-#navigation li a#contact {	
+#navigation li#menu_contact a {	
 	background: url( "../img_lib/nav/contact.png" ) no-repeat 31px 15px;
 }
-#navigation li a#services {	
+#navigation li#menu_services a {	
 	background: url( "../img_lib/nav/services.png" ) no-repeat 33px 15px;
 }
 
@@ -194,7 +194,7 @@ body#home #content h2#slogan {
 #content div.following {
 	width: 900px;
 	font-style: italic;
-	margin-top: 10px;
+	margin-top: 30px;
 }
 #content div.following p {
 	text-align: center;
@@ -226,24 +226,29 @@ body#home #content p {
 
 }
 
-#content label {
+span.label {
 	display: block;
 	float: left;
 	font-weight: bold;
 	width: 150px;
-	clear: left;
+	clear: both;
 }
 
-#contact label:after
+span.label:after
 {
 	content: ": ";
 }
 
-#contact p.intro {
+#home #section_title {
+	display: none;
+	visibility: hidden;
+}
+
+#contact_info p.intro {
 	margin-bottom: 15px;
 }
 
-#content field {
+span.field {
 	display: block;
 	float: left;
 }
