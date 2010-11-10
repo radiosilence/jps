@@ -7,7 +7,7 @@
 		<title>Jonathan Sharp &raquo; Refurbishment Decoration Maintenance Surrey Sussex Kent &raquo; <?=$title?></title>
 		<base href="http://<?=HOST?><?=BASE_HREF?>/"/>
 		<link rel="stylesheet" href="css_lib/screen.css">
-		<?php if($is_mobile or $_SERVER['REMOTE_ADDR'] == '82.21.65.254'): ?>
+		<?php if($is_mobile): ?>
 		<link rel="stylesheet" href="css_lib/mobile.css">
 		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
 		<?php endif;?>
