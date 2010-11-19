@@ -2,9 +2,10 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-		<meta name="description" content"Jonathan Sharp provides services including but not limited to Refurbishment, Decoration, Painting, Tiling, Fitting, Windows, and General Maintenance on properties in or around Surrey, Sussex and Kent. He brings 15 years of experience to the table and is based in Redhill, Surrey. He does exceptionally high quality work and builds a great relationship with his clients through honesty and taking a pride in what he does." />
-		<meta name="keywords" content="painting,decorating,surrey,sussex,kent,maintenance,refurbishment,windows,tiling,experience,honest,doors,hanging,hung,floors,ceramic,wallpapering,repairs,repair,renovation,woodwork,locks,fitting,kitchens,furniture,Jonathan,Paul,Sharp,high,quality,redhill,reigate,guildford,london,horley,cambridge,gatton,monson,nutfield,bletchingly,godstone,banstead,salfords,gatwick" />
-		<title>Jonathan Sharp &raquo; Refurbishment Decoration Maintenance Surrey Sussex Kent &raquo; <?=$title?></title>
+		<meta name="Description" content"Jon provides services including Refurbishment, Decoration, Painting, Tiling, and Maintenance in Surrey, Sussex and Kent." />
+		<meta name="keywords" content="painting,decorating,surrey,sussex,kent,maintenance,refurbishment,redhill" />
+		<link rel="canonical" href="http://<?=HOST?><?=BASE_HREF?>/<?=$page?>.html" />
+		<title>Jonathan Sharp &raquo; Refurbishment & Decoration &raquo; <?=$title?></title>
 		<base href="http://<?=HOST?><?=BASE_HREF?>/"/>
 		<link rel="stylesheet" href="css_lib/screen.css">
 		<?php if($is_mobile): ?>
@@ -16,6 +17,24 @@
 			<link rel="stylesheet" href="css_lib/ie6.css">
 		<![endif]-->
 
+<!-- Google Analytics-->
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19614413-1']);
+  _gaq.push(['_setDomainName', 'none']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!--// Google Analytics-->
 	</head>
 	<body id="<?=$page?>">
 		<div id="wrapper">

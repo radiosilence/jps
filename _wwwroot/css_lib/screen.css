@@ -16,27 +16,28 @@ outline-width:medium;
 a img {border:none;}
 
 body {
-	background: #442200 url( "../img/bg.jpg" );
+	background: #080400 url( "../img/bg.jpg" );
 }
 
 
 body, div, p, span, li, a {
-	font-family: 'Droid Serif', georgia, serif;	
+	font-family: Georgia, serif;	
 }
 
 h1 {
-	font-family: "adobe garamond pro", "garamond", 'Droid Serif', georgia, serif;
+	font-family:  'Adobe Garamond Pro', Garamond, 'Droid Serif', georgia, serif;	
 	font-size: 48pt;
 	font-variant: small-caps;
 }
 
 h2 {
-	font-family: "adobe garamond pro", "garamond", 'Droid Serif', georgia, serif;
+	font-family: 'Adobe Garamond Pro', Garamond, 'Droid Serif', georgia, serif;	
+	font-size: 16pt;
 }
 
 h3 {
-	font-family: "adobe garamond pro", "garamond", 'Droid Serif', georgia, serif;
-	font-size: 18pt;
+	font-family: 'Adobe Garamond Pro', Garamond, 'Droid Serif', georgia, serif;	
+	font-size: 15pt;
 	margin-top: 10px;
 }
 
@@ -81,11 +82,11 @@ a {
 	background: white url( "../img/header.png" ) 34px 19px no-repeat;
 	height: 93px;
 }
-
+/*
 body#home #header {
 	background: white url( "../img/header_home.png" ) 201px 25px no-repeat;
 	height: 143px;
-}
+}*/
 #nav_border {
 	background: black;
 	height: 10px;
@@ -173,7 +174,7 @@ body#home #content h2#slogan {
 #content h2 {
 	padding-left: 30px;
 	padding-top: 24px;
-	font-size: 24pt;
+	font-size: 22pt;
 	padding-bottom: 12px;
 }
 

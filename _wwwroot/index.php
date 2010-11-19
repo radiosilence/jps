@@ -1,6 +1,6 @@
 <?php
-if(str_replace('www.',null,$_SERVER['HTTP_HOST']) == 'jonathan-sharp.co.uk')
-     die("Coming soon!");
+//if(str_replace('www.',null,$_SERVER['HTTP_HOST']) == 'jonathan-sharp.co.uk')
+//     die("Coming soon!");
 /** 
  * Das index, ja?
  */
