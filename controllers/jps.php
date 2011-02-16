@@ -16,6 +16,11 @@ class JPS extends \Core\Controller {
         'services' => 'Services',
         'contact' => 'Contact'
     );
+
+    public function __construct($args) {
+        parent::__construct($args);
+        $this->init();
+    }
     private function init() {
         $t = new \Core\Template();
         $t->date = new \DateTime();
@@ -28,13 +33,12 @@ class JPS extends \Core\Controller {
         $this->template = $t;
     }
     public function index() {
-        $this->init();
         $this->template->content = $this->get_page('home');
         echo $this->template->render('standard_page.php');
     }
 
     public function page() {
-        $page = $this->args['page'];
+        $page = $this->_args['page'];
         if(isset($this->pages[$page])) {
             $this->init();
             $this->template->content = $this->get_page($page);

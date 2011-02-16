@@ -1,7 +1,6 @@
 <?php // Routes
 
 $routes = array(
-	'^services$' => 'JPS:method=page;page=services',
-	'^contact$' => 'JPS:method=page;page=contact',
-	'^(index|home)?$' => 'JPS:page=home;'
+    '^([a-z]+)(\.html)?$' => 'JPS:method=page;page=$1;__cache__=on',
+	'^(index|home)?(\.html)?$' => 'JPS:page=home;__cache__=on'
 );
