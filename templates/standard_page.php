@@ -5,7 +5,7 @@
 		<meta name="Description" content"Jon provides services including Refurbishment, Decoration, Painting, Tiling, and Maintenance in Surrey, Sussex and Kent." />
 		<meta name="keywords" content="painting,decorating,surrey,sussex,kent,maintenance,refurbishment,redhill" />
 		<link rel="canonical" href="http://<?=HOST?><?=BASE_HREF?>/<?=$page?>.html" />
-		<title>Jonathan Sharp &raquo; Refurbishment & Decoration &raquo; <?=$title?></title>
+		<title>Jonathan Sharp &ndash; Decoration, Refurbishment &amp; Maintenance<?=($title ? " &raquo; {$title}" : null)?></title>
 		<base href="http://<?=HOST?><?=BASE_HREF?>/"/>
 		<link rel="stylesheet" href="css_lib/screen.css">
 		<?php if($is_mobile): ?>
@@ -43,7 +43,7 @@
 			</div>
 			<div id="shadow">
 				<div id="header">
-					<a href="home.html"><h1>Jonathan Sharp - Decoration, Refurbishment &amp; Maintenance around Surrey, Sussex &amp; Kent</h1></a>
+					<a href="home.html"><h1>Jonathan Sharp &ndash; Decoration, Refurbishment &amp; Maintenance around Surrey, Sussex &amp; Kent</h1></a>
 				</div>
 				<?=$menu?>
 				<div id="content">

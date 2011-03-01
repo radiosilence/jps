@@ -24,8 +24,8 @@ class JPS extends \Core\Controller {
     private function init() {
         $t = new \Core\Template();
         $t->date = new \DateTime();
-        $t->title = $this->pages[$this->args['page']];
-        $t->page = $this->args['page'];
+        $t->title = $this->pages[$this->_args['page']];
+        $t->page = $this->_args['page'];
         $t->menu_items = $this->pages;
         $t->menu = $t->render('menu.php');
         $t->footer = $t->render('footer.php');
@@ -34,6 +34,7 @@ class JPS extends \Core\Controller {
     }
     public function index() {
         $this->template->content = $this->get_page('home');
+        $t->title = False;
         echo $this->template->render('standard_page.php');
     }
 
