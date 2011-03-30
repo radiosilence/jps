@@ -33,9 +33,10 @@ class JPS extends \Core\Controller {
         $this->template = $t;
     }
     public function index() {
-        $this->template->content = $this->get_page('home');
-        $t->title = False;
-        echo $this->template->render('standard_page.php');
+	$t = $this->template;
+        $t->content = $this->get_page('home');
+        $t->title = null;
+        echo $t->render('standard_page.php');
     }
 
     public function page() {
