@@ -170,10 +170,6 @@ p {
 	overflow: hidden;
 }
 
-body#home #content {
-	background: #161616 url( "../img_lib/contentbg.png" ) bottom no-repeat;
-}
-
 body#home #content h2#slogan {
 	display: block;
 }
