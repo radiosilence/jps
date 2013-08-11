@@ -2,7 +2,7 @@ from flask import Flask, request, g, redirect, url_for, \
      abort, render_template, flash
 
 
-DEBUG = True
+DEBUG = False
 
 app = Flask(__name__)
 app.config.from_object(__name__)
