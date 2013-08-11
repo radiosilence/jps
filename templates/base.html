@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="Description" content"Jon provides services including Refurbishment, Decoration, Painting, Tiling, and Maintenance in Surrey, Sussex and Kent." />
+    <meta name="keywords" content="painting,decorating,surrey,sussex,kent,maintenance,refurbishment,redhill" />
+    <link rel="canonical" href="http://jonathan-sharp.co.uk/{{ page }}" />
+    <title>Jonathan Sharp &ndash; Decoration, Refurbishment &amp; Maintenance {% if page != 'home' %} - {{ title }}{% endif %}?></title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css_lib/screen.css') }}">
+</head>
+<body id="{{ page }}">
+    <div id="wrapper">
+        <div id="rndtop">
+            &nbsp;
+        </div>
+        <div id="shadow">
+            <div id="header">
+            <a href="{{ url_for('home') }}"><h1>Jonathan Sharp &ndash; Decoration, Refurbishment &amp; Maintenance around Surrey, Sussex &amp; Kent</h1></a>
+            </div>
+            <div id="nav_border">
+            </div>
+            <div id="navigation">
+                <ul>
+                    <li id="menu_home"><a href="{{ url_for('home') }}">Home</a></li>
+                    <li id="menu_services"><a href="{{ url_for('services') }}">Services</a></li>
+                    <li id="menu_contact"><a href="{{ url_for('contact') }}">Contact</a></li>
+                </ul>
+            </div>
+            <div id="content">
+                <div id="contentinnershadow">
+                    &nbsp;</div>
+                    <h2 id="section_title">{{ title }}</h2>
+                    {% block content %}
+
+                    {% endblock %}
+                    <div class="following">
+                        <p>Please <a href="{{ url_for('contact') }}">contact</a> for a free survey and quotation.</p>
+                        <p>References available on request</p>
+                    </div>
+                </div>
+            </div>
+            <div id="rndbot">
+                &nbsp;
+            </div>
+            <div id="bottomlinks">
+                <p>Copyright &copy; 2013 Jonathan Sharp | E-Mail: <a href="mailto:jonathansharp1@gmail.com">jonathansharp1@gmail.com</a> | Tel: 07973 320277</p>
+                <p class="plug">Website &amp; branding by <a href="https://dapperdogstudios.com">Dapper Dog Studios</a></p>
+            </div>
+
+
+        </div>
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-43108197-1', 'jonathan-sharp.co.uk');
+          ga('send', 'pageview');
+
+      </script>
+  </body>
+  </html>
